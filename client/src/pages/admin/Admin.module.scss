@@ -1,0 +1,133 @@
+@import '../../assets/scss/_colors.scss';
+@import '../../assets/scss/_typos.scss';
+@import '../../assets/scss/_normalize.scss';
+@import '../../assets/responsive/_responsive.scss';
+
+.Admin {
+  h1{
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 3rem;
+  }
+  .containerAdmin{
+    margin: 2rem;
+    .gestionBeerDelete{
+      h2{
+        text-align: center;
+        font-family: Roboto, sans-serif;
+        font-size: 2rem;
+      }
+      .gestionContainer{
+        .gestionBeerDeleteContainerBeer{
+          h3{
+            text-align: center;
+            font-family: Roboto, sans-serif;
+            font-size: 1.5rem;
+          }
+          form{
+            display: flex;
+            flex-direction: column;
+            select{
+                padding: 1.5rem;
+                width: 100%;
+                border: none;
+                box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+                border-radius: 0.8rem;
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            button{
+                padding: 1.5rem 1rem;
+                background-color: $orange;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 2rem;
+            }
+          }
+        }
+
+        .addBeerContainer{
+          display: flex;
+          flex-direction: column;
+          h3{
+            text-align: center;
+            font-family: Roboto, sans-serif;
+            font-size: 1.5rem;
+          }
+          button{
+            padding: 1.5rem 1rem;
+            background-color: $orange;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 2rem;
+          }
+        }
+
+        .gestionBeerUpdateContainer{
+            h3{
+                text-align: center;
+                font-family: Roboto, sans-serif;
+                font-size: 1.5rem;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                select{
+                    padding: 1.5rem;
+                    width: 100%;
+                    border: none;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+                    border-radius: 0.8rem;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                input{
+                    padding: 1.5rem;
+                    width: 100%;
+                    border: none;
+                    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+                    border-radius: 0.8rem;
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+                button{
+                    padding: 1.5rem 1rem;
+                    background-color: $orange;
+                    color: white;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    font-size: 2rem;
+                }
+            }
+        }
+      }
+    }
+  }
+}
+
+// responsive tablet
+@include tablet {
+  .Admin {
+    padding: 2rem;
+
+    .containerAdmin {
+      .gestionBeerDelete {
+        .gestionContainer {
+          flex-direction: row;
+          gap: 1rem;
+
+          .gestionBeerDeleteContainerBeer,
+          .addBeerContainer,
+          .gestionBeerUpdateContainer {
+            flex: 1;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import '../../assets/scss/_colors.scss';
+@import '../../assets/scss/_typos.scss';
+@import '../../assets/scss/_normalize.scss';
+@import '../../assets/responsive/_responsive.scss';
+
+footer {
+  background-color: $orange;
+  color: $dark;
+  padding: 2rem;
+  p {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .footerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      font-family: islandMoments, sans-serif;
+    }
+
+    .footerHoraire, .footerContact {
+      margin-bottom: 2rem;
+    }
+
+    h3, h2 {
+      margin-bottom: 1rem;
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: Roboto, sans-serif;
+    }
+
+  }
+
+
+  @include tablet {
+    .footerContainer {
+      flex-direction: row;
+      justify-content: space-around;
+      text-align: left;
+    }
+
+    .footerHoraire, .footerContact {
+      margin: 0;
+    }
+  }
+}

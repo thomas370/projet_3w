@@ -1,0 +1,16 @@
+@import '_normalize.scss';
+@import '_colors.scss';
+@import '_typos.scss';
+@import '../responsive/_responsive.scss';
+
+*{
+  box-sizing: border-box;
+  font-size: 62.65%;
+}
+
+p, a , li, input, select, option, button, label, strong, span, textarea, table, th, td, svg {
+  font-size: 1.6rem;
+  @include desktop {
+    font-size: 1.8rem;
+  }
+}

@@ -1,0 +1,58 @@
+@import '../../assets/scss/_colors.scss';
+@import '../../assets/scss/_typos.scss';
+@import '../../assets/scss/_normalize.scss';
+@import '../../assets/responsive/_responsive.scss';
+
+.presentation {
+  padding: 4rem;
+
+  .presentationText {
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      font-family: islandMoments, sans-serif;
+    }
+
+    p {
+      width: 85%;
+      text-align: center;
+      margin: 0 auto 2rem auto;
+      font-family: Roboto, sans-serif;
+    }
+  }
+}
+
+@include tablet {
+  .presentation {
+    padding: 6rem;
+
+    .presentationText {
+      h2 {
+        font-size: 5rem;
+      }
+
+      p {
+        width: 60%;
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@include desktop {
+  .presentation {
+    padding: 6rem;
+
+    .presentationText {
+      h2 {
+        font-size: 5rem;
+      }
+
+      p {
+        width: 60%;
+        font-size: 2rem;
+      }
+    }
+  }
+}

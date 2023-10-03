@@ -1,0 +1,15 @@
+@import '../../assets/scss/_colors.scss';
+@import '../../assets/scss/_typos.scss';
+@import '../../assets/scss/_normalize.scss';
+@import '../../assets/responsive/_responsive.scss';
+
+.rating {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #ffa500;
+  span{
+    font-size: 3.5rem;
+    color: #ffa500;
+  }
+}
+

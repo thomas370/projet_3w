@@ -1,0 +1,86 @@
+@import '../../assets/scss/_colors.scss';
+@import '../../assets/scss/_typos.scss';
+@import '../../assets/scss/_normalize.scss';
+@import '../../assets/responsive/_responsive.scss';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  background-color: $orange;
+
+  .logo {
+    a {
+      color: $white;
+      text-decoration: none;
+      font-family: islandMoments, sans-serif;
+      font-size: 2.5rem;
+    }
+  }
+
+  .menuToggle {
+    display: block;
+    color: $white;
+    font-size: 2rem;
+    cursor: pointer;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .navLinks {
+    display: none;
+    list-style-type: none;
+
+    &.open {
+      display: block;
+      position: absolute;
+      top: 5%;
+      left: 0;
+      width: 100%;
+      background-color: $orange;
+      padding: 1rem 0;
+      z-index: 1;
+
+      li {
+        padding: 2rem 0;
+        text-align: center;
+        font-family: Roboto, sans-serif;
+
+        a{
+          color: $white;
+          text-decoration: none;
+          transition: color 0.3s;
+          font-family: Roboto, sans-serif;
+          font-weight: bold;
+
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+    }
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+
+      li {
+        padding: 0 5px;
+
+        a {
+          color: $white;
+          text-decoration: none;
+          transition: color 0.3s;
+          font-weight: bold;
+
+          &:hover {
+            color: $yellow;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+@import '../../assets/scss/_colors.scss';
+@import '../../assets/scss/_typos.scss';
+@import '../../assets/scss/_normalize.scss';
+@import '../../assets/responsive/_responsive.scss';
+
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../assets/images/background2.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+    h1{
+      font-size: 4rem;
+      color: $black;
+      margin-bottom: 1.5rem;
+      font-family: "roboto", sans-serif;
+      text-align: center;
+    }
+}
+
+.btnContainer {
+  text-align: center;
+  padding: 1rem;
+  button{
+    padding: 1.5rem 1rem;
+    width: 100%;
+    background-color: $orange;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+}
+
+.formContainer {
+  background: rgba( 255, 255, 255, 0.4 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 0px );
+  border-radius: 1rem;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width: 40rem;
+  width: 95%;
+}
+
+.loginForm {
+  .formGroup {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    input {
+      padding: 1.5rem;
+      width: 100%;
+      border: none;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.16);
+      border-radius: 0.8rem;
+      font-size: 1.5rem;
+    }
+    p{
+      margin: 2rem;
+      font-size: 1.5rem;
+      font-family: Roboto, sans-serif;
+      a{
+        color: $orange;
+        text-decoration: none;
+      }
+    }
+  }
+}
+.loginAlert {
+  text-align: center;
+  display: block;
+  color: #d10808;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
